@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/exam.png" type="image/x-icon" />
+    <title>Assignment3</title>
+    <!-- Manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/bf49972686.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- daisyUI + TailwindCSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- embedded stylesheet -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+        .menu-item {
+          color: black;
+          transition: all 0.3s;
+        }
+        .menu-item:hover {
+          font-size: 1.5rem; /* Equivalent to text-2xl */
+          font-weight: bold;
+          background-color: #a7f3d0; /* Equivalent to bg-green-200 */
+        }
+      }
+    </style>
+    <!-- for customizing with tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_text1: "rgb(33, 33, 33)",
+              primary_text2: "rgb(73, 73, 73)",
+              green1: "rgb(171, 239, 95)", // Corrected the variable name from 'gree1' to 'green1'
+              green2: "rgba(171, 239, 95, 0.5)", // Corrected the variable name from 'gree2' to 'green2' and changed to rgba
+              "card-color-1": "#E7C1D3",
+              "card-color-2": "#EFDA6E",
+              "card-color-3": "#A4DAC3",
+              "card-color-4": "#77AAEA",
+            },
+          },
+        },
+      };
+    </script>
+    
+  </head>
+  <body class="font-manrope">
+    <!-- header start -->
+    <header>
+      <!-- navbar section -->
+      <nav class="bg-base-100">
+        <div class="navbar justify-between w-10/12 mx-auto">
+          <div class="navbar-start">
+            <h3 class="text-3xl font-extrabold text-nowrap">
+              <a href="#"
+                ><i
+                  class="fa-solid fa-arrow-right rounded-full -rotate-45 bg-green1 p-2 mr-4"
+                ></i
+                >RINTERIO</a
+              >
+            </h3>
+          </div>
+          <div class="navbar-center hidden lg:block">
+            <ul class="flex items-center space-x-8 font-bold">
+              <li>
+                <a
+                  class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                  >Homepage</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                  >Portfoli</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-2">
+            <!-- search icon -->
+            <button class="btn btn-ghost btn-circle hidden md:block lg:block">
+              <i
+                class="fa-solid fa-magnifying-glass text-2xl hover:text-3xl"
+              ></i>
+            </button>
+            <!-- cart icon -->
+            <button class="btn btn-ghost btn-circle hidden md:block lg:block">
+              <i class="fa-solid fa-cart-shopping text-2xl hover:text-3xl"></i>
+            </button>
+            <!-- book now icon -->
+            <button class="btn bg-green2 hidden md:block lg:block">
+              <h3 class="text-xl font-extrabold">
+                BOOK NOW<i
+                  class="fa-solid fa-arrow-right rounded-full text-white bg-black -rotate-45 p-2 ml-2"
+                ></i>
+              </h3>
+            </button>
+            <!-- menu -->
+            <div class="dropdown  lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <i class="fa-solid fa-bars text-2xl hover:text-3xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-medium right-0"
+              >
+                <li>
+                  <a
+                    class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                    >Homepage</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                    >Portfoli</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primary-text1 cursor-pointer hover:text-2xl transition-colors duration-300 ease-in-out"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="w-10/12 mx-auto py-10 md:py-15 lg:py-20">
+        <div
+          class="space-y-3 md:space-y-4 lg:space-y-5 flex flex-col justify-center"
+        >
+          <img class="mx-auto" src="assets/banner.png" alt="" />
+          <h1
+            class="text-2xl md:text-4xl lg:text-6xl text-primary-text1 font-extrabold text-center w-9/12 mx-auto"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-sm lg:text-base font-medium text-scondary text-center w-8/12 mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button class="btn bg-green1 rounded-full w-9/12 md:w-5/12 lg:w-4/12 mx-auto">
+            <a class="text-primary_text1"
+              >View Details
+              <i
+                class="fa-solid fa-arrow-right-long -rotate-45 bg-primary-text1 text-black_2 p-2 rounded-full"
+              ></i
+            ></a>
+          </button>
+        </div>
+      </section>
+    </header>
+    <!-- main start -->
+    <main></main>
+    <!-- footer start -->
+    <footer></footer>
+  </body>
+</html>
